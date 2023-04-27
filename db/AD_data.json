@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6414b16f0bc1325749d6416f"
+  },
+  "uid": "6414ab9c10a04f9ff6ecc5b0",
+  "ad_name": "a",
+  "ad_type": "Wide-skyscraper",
+  "link": "https://www.google.com/",
+  "sdate": "2023-03-22",
+  "edate": "2023-03-25",
+  "img_name": "a_2023-03-22_2023-03-25.jpg",
+  "view_cnt": 0
+}]

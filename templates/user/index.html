@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<title>{{page_name}}</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+	<style type="text/css">
+		#copy_svg:hover{
+			fill:#58a6ff;
+			cursor: pointer;
+		}
+		body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #332D2D;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+	</style>
+</head>
+<body>
+<div class="topnav">
+  <!-- <a class="active" href="#home">Home</a> -->
+ <a class="navbar-brand mr-4" >
+                      Your App Name 
+                </a>
+<a href="/logout"  style="float: right;">Logout</a>
+</div>
+
+
+  
+
+<br>
+<br>
+
+<div class="container mt-3">
+	<h2><b>Create API</b></h2>
+	<br>
+  <h4><i>Types of ADs you can choose form below*</i></h4>
+ 
+<form action="user" method="post">
+	
+			 &nbsp;
+		
+				<select name="ad_type" id="ad_type" placeholder="Type of AD...*" class="form-select" aria-label="Default select example"required>
+					<option>None</option>
+					<option value="Leaderboard">Leaderboard</option>
+					<option value="Large-rectangle">Large rectangle</option>
+					<option value="Medium-rectangle">Medium rectangle</option>
+					<option value="Mobile-banner">Mobile banner</option>
+					<option value="Wide-skyscraper">Wide skyscraper</option>
+				</select>
+				<br>
+			<input type="submit" class="btn btn-primary" value="Create">
+		
+</form>
+
+<br>
+<br>
+<div id="img_place" style="float: right; margin-right: 5%; margin-top: -1%"></div>
+
+<br>
+{%for x in link%}
+<div class="mb-3">
+	<h2><b>Your API</b></h2>
+<label for="exampleFormControlTextarea1" class="form-label">
+	<p>Type of AD: <b><i>{{x['type']}}</i></b></p></label> <br>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>{{x['link']}}</textarea><br>
+<a href="/api/delete?id={{x['_id']}} " class="btn btn-primary">Delete</a>
+<br>
+</div>
+{%endfor%}
+<script type="text/javascript">
+	$("#ad_type").change(function(){
+		var place = '<img src="http://192.168.0.106:5001/static/imgs/';
+		var place1 = '.png">';
+		var get_val_data = $('#ad_type').val();
+		$('#img_place').empty();
+		$('#img_place').append(place+get_val_data+place1);
+	});
+
+
+
+</script>
+</div>
+</body>
+</html>

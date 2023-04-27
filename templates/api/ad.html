@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{page_name}}</title>
+	<style>
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+<center>
+
+	<div id="image-container">
+		{% for x in full_img %}
+			<a href="{{x['anc']}}" target="_blank"><img src="{{ url_for('static', filename= 'ads/') }}{{x['sdata']}}" alt="Image 1"></a>
+		{% endfor %}
+	</div>
+
+	<script>
+		let images = document.querySelectorAll('#image-container img');
+		let index = 0;
+
+		setInterval(function() {
+			images[index].style.display = 'none';
+			index = (index + 1) % images.length;
+			images[index].style.display = 'block';
+		}, 5000);
+	</script>
+</center>
+</body>
+</html>

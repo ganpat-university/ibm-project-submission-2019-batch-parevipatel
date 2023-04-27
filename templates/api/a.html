@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Scrolling Images</title>
+	<style>
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="image-container">
+		<img src="1.jpg" alt="Image 1">
+		<img src="2.jpg" alt="Image 2">
+		<img src="3.jpg" alt="Image 3">
+	</div>
+
+	<script>
+		let images = document.querySelectorAll('#image-container img');
+		let index = 0;
+
+		setInterval(function() {
+			images[index].style.display = 'none';
+			index = (index + 1) % images.length;
+			images[index].style.display = 'block';
+		}, 1000);
+	</script>
+</body>
+</html>

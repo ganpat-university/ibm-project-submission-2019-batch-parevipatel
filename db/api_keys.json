@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "63f853751933f72c8ab544f5"
+  },
+  "uid": "63f853691933f72c8ab544f4",
+  "type": "Wide-skyscraper",
+  "key": "iLQSBUvPi3eZHeH8TRR5RD4nCS6llB0GwqonlOYKB83aJzCHOb",
+  "link": "<iframe src='http://127.0.0.1:5001/api/view/ad?key=iLQSBUvPi3eZHeH8TRR5RD4nCS6llB0GwqonlOYKB83aJzCHOb' height='700' width='180' style='border: 0px;'></iframe>"
+},{
+  "_id": {
+    "$oid": "64129430f1a2caa90856deb2"
+  },
+  "uid": "63f853691933f72c8ab544f4",
+  "type": "Medium-rectangle",
+  "key": "I2BMgnAXkThlD8bmOYPgEBpj0lwEYf9y4GSRvLP1OnTOueOpZu",
+  "link": "<iframe src='http://127.0.0.1:5001/api/view/ad?key=I2BMgnAXkThlD8bmOYPgEBpj0lwEYf9y4GSRvLP1OnTOueOpZu' height='270' width='320' style='border: 0px;'></iframe>"
+}]

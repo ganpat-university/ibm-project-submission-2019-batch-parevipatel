@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "63f853691933f72c8ab544f4"
+  },
+  "name": "kewwew",
+  "mail": "a@g.c",
+  "pass": "1",
+  "lvl": "user"
+},{
+  "_id": {
+    "$oid": "63f853841933f72c8ab544f6"
+  },
+  "name": "dsd",
+  "mail": "b@g.c",
+  "pass": "1",
+  "lvl": "advertiser"
+}]

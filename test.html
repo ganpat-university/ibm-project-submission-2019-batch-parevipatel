@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      margin-top: 5%;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    .login-btn {
+      background-color: #1a1a1a;
+      border-color: #1a1a1a;
+      color: #ffffff;
+      border-radius: 0;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .ad-banner {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 700px;
+      width: 180px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+    }
+
+    @media (min-width: 768px) {
+      .ad-banner {
+        height: 120px;
+        width: 740px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .ad-banner {
+        height: 300px;
+        width: 350px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .ad-banner {
+        height: 270px;
+        width: 320px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .ad-banner {
+        height: 60px;
+        width: 310px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+
+    <center><img src="https://via.placeholder.com/750x100" style="height: 100px;width: 750px;"></center>
+    <br>
+
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center">Login</h4>
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+   <!--    <div class="container">
+        <div class="row mt-5">
+          <div class="ad-banner">
+            <img src="https://via.placeholder.com/150x150" alt="Ad Banner">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://via.placeholder.com/180x700.png?text=Ad" alt="Ad" height='700' width='180'>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://via.placeholder.com/740x120.png?text=Ad" alt="Ad" height='120' width='740'>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://via.placeholder.com/350x300.png?text=Ad" alt="Ad" height='300' width='350'>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://via.placeholder.com/320x270.png?text=Ad" alt="Ad" height='270' width='320'>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://via.placeholder.com/310x60.png?text=Ad" alt="Ad" height='60' width='310'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
